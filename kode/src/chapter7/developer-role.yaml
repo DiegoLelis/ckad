@@ -9,6 +9,7 @@ rules:
   - apiGroups: [""]
     resources: ["ConfigMap"]
     verbs: ["create"]
+    resourceNames: ["blue", "orange"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
